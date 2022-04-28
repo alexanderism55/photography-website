@@ -10,7 +10,7 @@
 
 ## Portfolio-page
 
-- [ ] Photography work on slide mode 
+- [ ] Photography work on slide mode
 - [ ] Animation
 - [ ] Equipments
 
