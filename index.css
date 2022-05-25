@@ -1,10 +1,10 @@
 @charset "utf-8";
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Telugu;
-    color: black;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Telugu;
+  color: black;
+  text-decoration: none;
 }
 
 .body {
@@ -13,77 +13,161 @@
   background-size: auto;
   background-position: center;
   position: relative;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   line-height: 1.6;
 }
 /* navbar */
 
-.logo{
-    padding: 10px;
+.logo {
+  padding: 10px;
 }
 
-.nav-area{
-    float: right;
-    list-style: none;
-    margin: 20px;
-    padding-right: 10px;
+.nav-area {
+  float: right;
+  list-style: none;
+  margin: 20px;
+  padding-right: 10px;
 }
 
-.nav-area li{
-    display: inline-block;
-    padding: 1PX 30px;
-    font-size: 19px;
+.nav-area li {
+  display: inline-block;
+  padding: 1px 30px;
+  font-size: 19px;
 }
 
 /* showcase */
 
-.showcase{
-    position: absolute;
-width: 641px;
-height: 96px;
-left: 19px;
-top: 340px;
+.showcase {
+  position: absolute;
+  width: 641px;
+  height: 96px;
+  left: 19px;
+  top: 340px;
 }
 
-.showcase-text{
-    font-family: 'Tiro Bangla';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-padding: 1PX;
-letter-spacing: 2px;
-word-spacing: 12px;
-align-items: center;
+.showcase-text {
+  font-family: "Tiro Bangla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  padding: 1px;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+  align-items: center;
 }
 
 /* background */
 
 .top6 {
-    position: absolute;
-width: px;
-height: 350px;
-left: 29px;
-top: 0px;
+  position: absolute;
+  width: px;
+  height: 350px;
+  left: 29px;
+  top: 0px;
 }
 
-.rigth10{
-    position: absolute;
-right: 0px;
-top: -110px;
+.rigth10 {
+  position: absolute;
+  right: 0px;
+  top: -110px;
 }
 
-.middle22{
-    position: absolute;
-width: 340.68px;
-height: 380.18px;
-left: 500.93px;
-top: 437px;
+.middle22 {
+  position: absolute;
+  width: 340.68px;
+  height: 380.18px;
+  left: 500.93px;
+  top: 437px;
 }
 
-.middle7{
-    position: absolute;
-width: 324.13px;
-height: 318.18px;
-left: 592px;
-top: 140.23px;
+.middle7 {
+  position: absolute;
+  width: 324.13px;
+  height: 318.18px;
+  left: 592px;
+  top: 140.23px;
+}
+
+/* About us */
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40;
+  margin-bottom: 20px;
+}
+
+.about-story {
+  background-color: rgba(219, 211, 211, 0.247);
+  padding: 20px;
+  border: 5px solid rgb(73, 69, 69)
+}
+
+.about-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-image {
+  max-width: 60%;
+  min-width: 500px;
+  padding: 20px;
+}
+
+.about-align {
+  text-align: end;
+}
+
+.center {
+  align-content: center;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+    height: 100px;
+    background: rgb(189, 185, 185);
+    margin-top: 20px;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.copyrights{
+}
+
+.social-padding{
+    padding-left: 20Px;
+    padding-right: 20px; 
+    padding-top: 50px;
+}
+
+.icon{
+  display: inline-block;
+  font-size: 44px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.ri-feacebook-circle-line{
+  animation-delay: 1s;
+}
+
+.ri-github-line{
+  animation-delay:2s;
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(O);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(O);
+  }
 }
