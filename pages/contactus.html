@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EPIC</title>
+    <link href="/index.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="best photography and videographer company in Belgium."
+    />
+    <link rel="icon" href="./icon/32officeicons-6_89731.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="about-container">
+    <!--navbar-->
+    <div class="wraper">
+      <div class="logo">
+        <img class="logo" src="/logo/logo1.png" alt="logo" />
+        <ui class="nav-area">
+          <li><a href="./aboutus.html">ABOUT US</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ui>
+      </div>
+    </div>
+    <!-- Showcase -->
+    <section class="contact-container">
+      <div class="contact-container-2">
+        <div class="left"></div>
+        <div class="right">
+          <div class="overlay">
+            <form onsubmit="event.preventDefault(); validateForm()">
+              <h2>Contact-US</h2>
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="Your name" />
+              <small class="error"></small>
+
+              <label for="email">Email:</label>
+              <input type="text" id="email" placeholder="Your email" />
+              <small class="error"></small>
+
+              <label for="message">Message:</label>
+              <textarea
+                type="text"
+                id="message"
+                placeholder="Your message"
+                rows="6"
+              ></textarea>
+              <small class="error"></small>
+
+              <div class="center">
+                <input type="submit" value="Send Message" />
+                <p id="success"></p>
+                <a href="mailto:alexanderism55@gmail.com"></a>
+              </div>
+            </form>
+
+            <!--<a href="#" class="btn">Send</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer-flex social-padding">
+      <h2 class="copyrights">Copyrights</h2>
+      <div>
+        <i class="ri-instagram-line icon"></i>
+        <i class="ri-facebook-circle-line icon"></i>
+        <i class="ri-github-line icon"></i>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
