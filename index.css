@@ -1,4 +1,21 @@
-@charset "utf-8";
+
+
+/* About us */
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40;
+  margin-bottom: 20px;
+}
+
+.about-story {
+  background-color: rgba(219, 211, 211, 0.247);
+  padding: 20px;
+  border: 5px solid rgb(73, 69, 69)
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +32,24 @@
   position: relative;
   font-family: "Courier New", Courier, monospace;
   line-height: 1.6;
+
 }
-/* navbar */
+
+
+.about-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-image {
+  max-width: 60%;
+  min-width: 500px;
+  padding: 20px;
+}
+
+.about-align {
+  text-align: end;
+}
 
 .logo {
   padding: 10px;
@@ -33,10 +66,26 @@
   display: inline-block;
   padding: 1px 30px;
   font-size: 19px;
+
 }
 
-/* showcase */
+.center {
+  align-content: center;
+  text-align: center;
+}
 
+
+/* Footer */
+.footer {
+    height: 100px;
+    background: rgb(189, 185, 185);
+    margin-top: 20px;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
 .showcase {
   position: absolute;
   width: 641px;
@@ -54,9 +103,29 @@
   letter-spacing: 2px;
   word-spacing: 12px;
   align-items: center;
+
 }
 
-/* background */
+
+
+.copyrights{
+}
+
+.social-padding{
+    padding-left: 20Px;
+    padding-right: 20px; 
+    padding-top: 50px;
+}
+
+.icon{
+  display: inline-block;
+  font-size: 44px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.ri-feacebook-circle-line{
+  animation-delay: 1s;
+}
 
 .top6 {
   position: absolute;
@@ -88,15 +157,11 @@
   top: 140.23px;
 }
 
-/* About us */
-
-.about-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40;
-  margin-bottom: 20px;
+.left08 {
+  position: absolute;
+  top: 358px;
 }
+
 
 .about-story {
   background-color: rgba(219, 211, 211, 0.247);
@@ -104,20 +169,123 @@
   border: 5px solid rgb(73, 69, 69);
 }
 
-.about-flex {
+.left09 {
+  position: absolute;
+  top: 915px;
+}
+
+.right19 {
+  position: absolute;
+  right: 0px;
+  top: 914px;
+}
+
+.about1 {
+  position: absolute;
+  top: 1340px;
+  right: 650px;
+}
+
+.about4 {
+  position: absolute;
+  top: 1540px;
+  left: 650px;
+}
+
+/* ABOUT US*/
+
+.about-us {
+  position: absolute;
+  left: 575px;
+  top: 1000px;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+}
+
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid white;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: rgb(18, 18, 18);
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 900px;
 }
 
-.about-image {
-  max-width: 60%;
-  min-width: 500px;
-  padding: 20px;
+.card1 {
+  background: url("../images/img2.jpeg") center center no-repeat;
+  background-size: 400px;
+}
+.card1:hover {
+  background: url("../images/img2.jpeg") left center no-repeat;
+  background-size: 550px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card1:hover .fa {
+  opacity: 1;
+}
+.card2 {
+  background: url("../images/img3.jpeg") center center no-repeat;
+  background-size: 320px;
+}
+.card2:hover {
+  background: url("../images/img3.jpeg") left center no-repeat;
+  background-size: 600px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .fa {
+  opacity: 1;
+}
+h3 {
+  color: #fff;
+  margin: 20px;
+  transition: opacity 1s;
 }
 
-.about-align {
-  text-align: end;
+.founder {
+  color: #fff;
+  margin: 20px;
+  transition: 1s;
 }
+
 
 .center {
   align-content: center;
@@ -153,6 +321,15 @@
 
 .ri-feacebook-circle-line {
   animation-delay: 1s;
+}
+.icon {
+  color: #fff;
+  transition: 1s;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ri-github-line {
