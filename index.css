@@ -1,3 +1,20 @@
+
+
+/* About us */
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40;
+  margin-bottom: 20px;
+}
+
+.about-story {
+  background-color: rgba(219, 211, 211, 0.247);
+  padding: 20px;
+  border: 5px solid rgb(73, 69, 69)
+
 @charset "utf-8";
 * {
   margin: 0;
@@ -15,8 +32,23 @@
   position: relative;
   font-family: "Courier New", Courier, monospace;
   line-height: 1.6;
+
 }
-/* navbar */
+
+
+.about-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-image {
+  max-width: 60%;
+  min-width: 500px;
+  padding: 20px;
+}
+
+.about-align {
+  text-align: end;
 
 .logo {
   padding: 10px;
@@ -33,9 +65,25 @@
   display: inline-block;
   padding: 1px 30px;
   font-size: 19px;
+
 }
 
-/* showcase */
+.center {
+  align-content: center;
+  text-align: center;
+}
+
+
+/* Footer */
+.footer {
+    height: 100px;
+    background: rgb(189, 185, 185);
+    margin-top: 20px;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
 
 .showcase {
   position: absolute;
@@ -54,9 +102,28 @@
   letter-spacing: 2px;
   word-spacing: 12px;
   align-items: center;
+
 }
 
-/* background */
+
+
+.copyrights{
+}
+
+.social-padding{
+    padding-left: 20Px;
+    padding-right: 20px; 
+    padding-top: 50px;
+}
+
+.icon{
+  display: inline-block;
+  font-size: 44px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.ri-feacebook-circle-line{
+  animation-delay: 1s;
 
 .top6 {
   position: absolute;
@@ -218,4 +285,20 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.ri-github-line{
+  animation-delay:2s;
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(O);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(O);
+  }
 }
