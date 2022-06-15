@@ -10,6 +10,7 @@
       content="best photography and videographer company in Belgium."
     />
     <link rel="icon" href="./icon/32officeicons-6_89731.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   </head>
 
   <body>
@@ -78,5 +79,42 @@
         </div>
       </div>
     </section>
+    <section class="form-container-1">
+      
+      <div class="black">
+        <form onsubmit="event.preventDefault(); validateForm()" class="form-container">
+          <h2>Contact-US</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your name" />
+          <small class="error"></small>
+  
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Your email" />
+          <small class="error"></small>
+  
+          <label for="message">Message:</label>
+          <textarea
+            type="text"
+            id="message"
+            placeholder="Your message"
+            rows="6"
+          ></textarea>
+          <small class="error"></small>
+  
+          <div class="center">
+            <input type="submit" value="Send Message" />
+            <p id="success"></p>
+            <a href="mailto:alexanderism55@gmail.com"></a>
+          </div>
+        </form>
+        <div class="icona">
+          <i class="fa fa-instagram" id="instagram"></i>
+          <i class="fa fa-facebook-official" id="facebook"></i>
+          <i class="fa fa-github" id="github"></i>
+          <i class="fa fa-twitter" id="twitter"></i>
+        </div>
+      </div>
+    </section>
+    <script src="/script.js"></script>
   </body>
 </html>
